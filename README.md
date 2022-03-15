@@ -29,6 +29,7 @@ Connect to existing database by changing env variables `backend/.env.stage.dev`
 ### E2E
 
 `yarn e2e` Will run headless playwright tests
+
 `yarn e2e:headed` Will run headed playwright tests
 
 If you don't have necessary browser dependencies, run `npx playwright install` to install supported browsers.
