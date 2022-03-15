@@ -1,0 +1,24 @@
+{
+  "name": "fullstack-task",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "backend",
+      "frontend",
+      "shared"
+    ]
+  },
+  "scripts": {
+    "start:db": "docker-compose up",
+    "start:backend": "yarn workspace backend start:dev",
+    "start:frontend": "yarn workspace frontend dev",
+    "e2e": "playwright test e2e/homepage.spec.ts",
+    "e2e:headed": "playwright test e2e/homepage.spec.ts --headed",
+    "test": "yarn workspace frontend test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.20.0"
+  }
+}

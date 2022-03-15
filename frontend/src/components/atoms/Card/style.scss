@@ -1,0 +1,14 @@
+.card {
+  width: 400px;
+  border-radius: 24px;
+  background-color: #373951;
+
+  &__content {
+    padding: 24px;
+  }
+  &__actions {
+    padding: 24px;
+    border-radius: 24px;
+    background-color: #3e405b;
+  }
+}
