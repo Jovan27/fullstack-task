@@ -2,6 +2,12 @@
 
 ## Running the project
 
+All scripts can be executed from the repository root.
+
+### Install dependencies
+
+`yarn`
+
 ### Database
 
 Option 1: If you have docker and docker-compose installed on you machine
@@ -24,6 +30,8 @@ Connect to existing database by changing env variables `backend/.env.stage.dev`
 
 `yarn e2e` Will run headless playwright tests
 `yarn e2e:headed` Will run headed playwright tests
+
+If you don't have necessary browser dependencies, run `npx playwright install` to install supported browsers.
 
 ### Unit
 
